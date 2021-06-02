@@ -1,0 +1,22 @@
+<table class="table text-info bg-dark text-center">
+    <thead>
+    <tr class="text-white">
+    <th>ID</th>
+    <th>SOL</th>
+    <th><h3>CAMERA</h3><br><h4>id</h4><br><h4>name</h4><br><h4>rover_id</h4><br><h4>full_name</h4></th>
+    <th>IMAGE</th>
+    <th>EARTH_DATE</th>
+    <th><h3>ROVER</h3><br><h4>id</h4><br><h4>name</h4><br><h4>landing_date</h4><br><h4>launch_date</h4><br><h4>status</h4></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td >{{dataObj.id}}</td>
+    <td>{{dataObj.sol}}</td>
+    <td><br>{{dataObj.camera.id}}<br>{{dataObj.camera.name}}<br>{{dataObj.camera.rover_id}}<br>{{dataObj.camera.full_name}}</td>
+    <td><img src="{{dataObj.img_src}}"></td>
+    <td>{{dataObj.earth_date}}</td>
+    <td><br>{{dataObj.rover.id}}<br>{{dataObj.rover.name}}<br>{{dataObj.rover.landing_date}}<br>{{dataObj.rover.launch_date}}<br>{{dataObj.rover.status}}</td>
+    </tr>
+    </tbody>
+    </table>
