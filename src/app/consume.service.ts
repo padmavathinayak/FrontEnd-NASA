@@ -13,7 +13,7 @@ export class ConsumeService {
     return this.hc.get<Data[]>('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=hoeE1VO4zZ1IISrVirXujQtRWzLIF87dgorVW4ph')
     }
   getDataById(id):Observable<Data>{
-      return this.hc.get<Data>('http://localhost:3000/users/'+id)
+      return this.hc.get<Data>(''+id)
    }
   
 }
