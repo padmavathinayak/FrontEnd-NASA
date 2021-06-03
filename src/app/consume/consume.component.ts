@@ -11,13 +11,13 @@ import {Subscription} from 'rxjs';
 export class ConsumeComponent implements OnInit,OnDestroy{
 mySubscription:Subscription;
 myData:Data[]=[];
-data 
+photos
 constructor(private fsObj:ConsumeService,private router:Router) { }
 ngOnInit(): void {
     this.mySubscription= this.fsObj.getData().subscribe(
       userData=>{
-        this.data=userData;
-        console.log(this.data)
+        this.photos=userData;
+        console.log(this.photos)
        },
       err=>{
         console.log("err in getting data",err)
@@ -26,7 +26,7 @@ ngOnInit(): void {
     )
   }
   onSelectId(id){
-    this.router.navigateByUrl('user/'+id)
+    this.router.navigateByUrl('data/'+id)
   }
 
   ngOnDestroy(){

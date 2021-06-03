@@ -8,11 +8,12 @@
       </thead>
   
       <tbody>
-          <tr *ngFor="let dataObj of data">
-            <td><img src="{{dataObj.img_src}}"></td>
+          <tr *ngFor="let dataObj of photos">
+            <td><img src="{{dataObj.img_src}}" width=100px height=100px></td>
               <td>
-                 <button class="btn btn-sm btn-danger"  (click)="onSelectId(postObj.id)">{{postObj.id}}</button></td>
+                 <button class="btn btn-sm btn-danger"  (click)="onSelectId(dataObj.id)">{{dataObj.id}}</button></td>
               </tr>
       </tbody>
   </table>
 </div>
+

@@ -8,7 +8,7 @@ import {ConsumeService} from '../consume.service';
   styleUrls: ['./consumedetails.component.css']
 })
 export class ConsumedetailsComponent implements OnInit {
-  dataObj:Data
+  dataObj:Data;
   constructor(private ar:ActivatedRoute,private fs:ConsumeService) { }
 
   ngOnInit(): void {

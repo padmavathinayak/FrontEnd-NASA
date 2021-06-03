@@ -4,7 +4,7 @@ import {ConsumeComponent} from '../app/consume/consume.component';
 import {ConsumedetailsComponent} from '../app/consumedetails/consumedetails.component';
 const routes: Routes = [
   {path:'data',component:ConsumeComponent},
-  {path:'data/:id',component:ConsumedetailsComponent}
+  {path:'data/:id',component:ConsumedetailsComponent},
 ];
 
 @NgModule({
